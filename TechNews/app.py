@@ -1,7 +1,8 @@
-# from Flask import flask,render_template
+from flask import Flask,render_template
 from bs4 import BeautifulSoup
 import requests
 
+app = Flask(__name__) 
 url ="https://www.businesstoday.in/technology/news"
 req = requests.get(url)
 # soup.a for anchor tag and soup.find_all('a') to give a list of all anchor tags
