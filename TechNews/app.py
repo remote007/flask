@@ -16,4 +16,4 @@ def index() :
         finalnews +="\u2022 "+news.div.div.a["title"]+"\n"
     print(finalnews)    
 
-    return render_template("index.html",NEWS=finalnews)
+    return render_template("index.html",News=finalnews)
