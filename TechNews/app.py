@@ -5,3 +5,4 @@ import requests
 url ="https://www.businesstoday.in/technology/news"
 req = requests.get(url)
 soup = BeautifulSoup(req.content,"html.parser")
+print(soup)
