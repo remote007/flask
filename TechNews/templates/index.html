@@ -10,13 +10,20 @@
    
     <div name="News" style="width: 640px; height:700px ; position: relative;">
         <img id="bg" src=""  style="width: 640px; height:700px ;"">
-        <span style="position:absolute ; white-space: pre-line;top: 100px;left:30px">{{News|safe}}</span>
+        <span id="data" style="position:absolute ; white-space: pre-line;top: 100px;left:30px">{{News|safe}}</span>
     </div>
 
+
+    <script>
+        
+    </script>
     <script>
         const newbg = document.getElementById("bg");
         const background = new Image();
-        background.src = "../static/image/"+(Math.floor(Math.random()*(3))+1)+".jpg";
+        var x = (Math.floor(Math.random()*(3))+1);
+        if (x==2)
+            document.getElementById("data").style.color="white";
+        background.src = "../static/image/"+x+".jpg";
         newbg.src = background.src
     </script>
 </body>
