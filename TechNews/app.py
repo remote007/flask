@@ -15,6 +15,6 @@ def index() :
     finalnews =""
     for news in outerdata:
         finalnews +="\u2022 "+news.div.div.a["title"]+"\n"
-    print(finalnews)    
+    # print(finalnews)    
 
     return render_template("index.html",News=finalnews) #use News as div name and {{}} is jinja
