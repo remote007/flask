@@ -7,3 +7,5 @@ req = requests.get(url)
 # soup.a for anchor tag and soup.find_all('a') to give a list of all anchor tags
 soup = BeautifulSoup(req.content,"html.parser")
 outerdata = soup.find_all("div",class_="widget-listing",limit=6) 
+for news in outerdata:
+    print(news)
