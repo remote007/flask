@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import requests
 
 app = Flask(__name__) 
+@app.route("/",methods=["Get","POST"])
 url ="https://www.businesstoday.in/technology/news"
 req = requests.get(url)
 # soup.a for anchor tag and soup.find_all('a') to give a list of all anchor tags
